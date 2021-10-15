@@ -1,4 +1,4 @@
 flask
 casbin
 casbin_sqlalchemy_adapter
-
+psycopg2
