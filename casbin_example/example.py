@@ -18,6 +18,7 @@ e.add_grouping_policy("bob", "reader")
 
 
 print(e.get_permissions_for_user("reader"))
+# emmm.. mabe we can wrap this function....so it is with created by and created at..
 
 sub = "bob"  # the user that wants to access a resource.
 obj = "client"  # the resource that is going to be accessed.
