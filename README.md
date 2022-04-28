@@ -28,3 +28,13 @@ docker inspect 520d665e3be8 | grep Gateway
 We use the gateway ip because the pdadmin4 is running outside the bridge network of the docker-compose microservices
 
 # setup the keycloak
+
+* go to localhost:8080
+* login with the username / password in docker-compose for keycloak
+* go to top left master, then Add Realm, key in name, then create
+* now create a user, in the left panel, click users, then click add user
+* here i am going to create a user, after key in name and email, go to credential and setup a password
+* now lets use the user to logim the Keycloak Account Console at `http://localhost:8080/auth/realms/realm_001/account/#/`, will be asked to change to a new password `password2`. This user can also change his email, first name, last name (BUT NOT USERNAME) in the personal info tab.
+* at last lets secure first app, lets go back to the admin console, and select the realm.
+* go to clients (left panel), then create
+
